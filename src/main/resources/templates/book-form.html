@@ -2,7 +2,7 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Book detail</title>
 </head>
 <body>
 <form th:action="@{/book-form}" method="post">
@@ -13,7 +13,10 @@
         <label> Publisher  <input type="text" name="publisher"/> </label>
     </div>
     <div>
-
+        <label> Author  <input type="text" name="author"/> </label>
+    </div>
+    <div>
+        <label> Genre  <input type="text" name="genre"/> </label>
     </div>
     <div>
         <input type="submit" value="Submit"/>

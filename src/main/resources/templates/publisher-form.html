@@ -2,9 +2,25 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Publisher Catalogs</title>
 </head>
 <body>
-
+<form th:action="@{/publisher-form}" method="post">
+    <div>
+        <label> Publisher Name <input type="text" name="name"/> </label>
+    </div>
+    <div>
+        <label> Address  <input type="text" name="address"/> </label>
+    </div>
+    <div>
+        <label> Contact Person  <input type="text" name="contactPerson"/> </label>
+    </div>
+    <div>
+        <label> Phone Number  <input type="text" name="phoneNumber"/> </label>
+    </div>
+    <div>
+        <input type="submit" value="Submit"/>
+    </div>
+</form>
 </body>
 </html>
